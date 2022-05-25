@@ -1,0 +1,24 @@
+.header{
+    text-align: unset;
+    height: 48px;
+    line-height: 48px;
+    .collapse{
+        padding-left: 16px;
+    }
+    .navbar .navbar-brand{
+        color:#fff;
+        font-size: 36px;
+        font-weight:700;
+        padding-right: 16px;
+    }
+    .navbar-nav{
+        margin-right: auto;
+    }
+    .navbar-nav .nav-link{
+        color:#fff;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 24px;
+        padding-right: 16px;
+    }
+}
