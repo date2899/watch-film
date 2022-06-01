@@ -1,10 +1,17 @@
 import React from "react";
-// Import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react";
-// Import Swiper styles
 import "swiper/css";
+import "swiper/css/pagination";
+import "swiper/css/navigation";
 
-const Slider = () => {
+import { Link } from "react-router-dom";
+import { Pagination, Navigation } from "swiper";
+
+const Slider = ({ movies }) => {
+	const handleScrollTop = () => {
+		document.body.scrollTop = 0;
+		document.documentElement.scrollTop = 0;
+	};
 	return (
 		<div className="slide">
 			<div className="container-fluid col-md-10 p-0">
@@ -12,34 +19,20 @@ const Slider = () => {
 				<Swiper
 					spaceBetween={30}
 					slidesPerView={4}
-					onSlideChange={() => console.log("slide change")}
-					onSwiper={(swiper) => console.log(swiper)}
+					slidesPerGroup={4}
+					loop={true}
+					loopFillGroupWithBlank={true}
+					navigation={true}
+					modules={[Pagination, Navigation]}
 					className="swiper mySwiper"
 				>
-					<SwiperSlide className="swiper-slide">
-						Slide 1<span className="index">01</span>
-					</SwiperSlide>
-					<SwiperSlide className="swiper-slide">
-						Slide 2<span className="index">02</span>
-					</SwiperSlide>
-					<SwiperSlide className="swiper-slide">
-						Slide 3<span className="index">03</span>
-					</SwiperSlide>
-					<SwiperSlide className="swiper-slide">
-						Slide 4<span className="index">04</span>
-					</SwiperSlide>
-					<SwiperSlide className="swiper-slide">
-						Slide 5<span className="index">05</span>
-					</SwiperSlide>
-					<SwiperSlide className="swiper-slide">
-						Slide 6<span className="index">06</span>
-					</SwiperSlide>
-					<SwiperSlide className="swiper-slide">
-						Slide 7<span className="index">07</span>
-					</SwiperSlide>
-					<SwiperSlide className="swiper-slide">
-						Slide 8<span className="index">08</span>
-					</SwiperSlide>
+					{movies?.map((movie) => (
+						<SwiperSlide className="swiper-slide" key={movie.id}>
+							<Link to={`/detail/${movie.id}`} onClick={handleScrollTop()}>
+								<img src={`https://image.tmdb.org/t/p/w500${movie.poster_path}`} alt="sliderImage" />
+							</Link>
+						</SwiperSlide>
+					))}
 				</Swiper>
 			</div>
 		</div>

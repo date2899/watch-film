@@ -1,6 +1,8 @@
 import React from "react";
 import playcircle from "../../assets/image/PlayCircle.png";
 import group from "../../assets/image/Group.png";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faCalculator, faEye } from "@fortawesome/free-solid-svg-icons";
 
 const Video = () => {
 	return (
@@ -8,7 +10,7 @@ const Video = () => {
 			<div className="container-fluid col-md-10 p-0">
 				<div className="video-playe bg-white">
 					<div className="image">
-						<img src={playcircle} alt="" srcset="" />
+						<img src={playcircle} alt="" srcSet="" />
 					</div>
 					<div className="text">
 						<h2 className="video-header">Her & Him</h2>
@@ -23,7 +25,7 @@ const Video = () => {
 						<div className="episode episode1 ">
 							<div className="espisode-image col-4">
 								<div className="image">
-									<img src={group} alt="" srcset="" />
+									<img src={group} alt="" srcSet="" />
 								</div>
 							</div>
 							<div className="espisode-text col-8">
@@ -35,11 +37,11 @@ const Video = () => {
 								</p>
 								<p className="duration">
 									<span className="dura">
-										<i className="fas fa-eye"></i>
+										<FontAwesomeIcon icon={faEye} />
 										21.3K views
 									</span>
 									<span className="calen">
-										<i className="fas fa-calendar"></i>
+										<FontAwesomeIcon icon={faCalculator} />
 										June 2, 2021
 									</span>
 								</p>
@@ -48,7 +50,7 @@ const Video = () => {
 						<div className="episode episode2 ">
 							<div className="espisode-image col-4">
 								<div className="image">
-									<img src={group} alt="" srcset="" />
+									<img src={group} alt="" srcSet="" />
 								</div>
 							</div>
 							<div className="espisode-text col-8">
@@ -60,11 +62,11 @@ const Video = () => {
 								</p>
 								<p className="duration">
 									<span className="dura">
-										<i className="fas fa-eye"></i>
+										<FontAwesomeIcon icon={faEye} />
 										21.3K views
 									</span>
 									<span className="calen">
-										<i className="fas fa-calendar"></i>
+										<FontAwesomeIcon icon={faCalculator} />
 										June 2, 2021
 									</span>
 								</p>
@@ -73,7 +75,7 @@ const Video = () => {
 						<div className="episode episode3 ">
 							<div className="espisode-image col-4">
 								<div className="image">
-									<img src={group} alt="" srcset="" />
+									<img src={group} alt="" srcSet="" />
 								</div>
 							</div>
 							<div className="espisode-text col-8">
@@ -85,11 +87,11 @@ const Video = () => {
 								</p>
 								<p className="duration">
 									<span className="dura">
-										<i className="fas fa-eye"></i>
+										<FontAwesomeIcon icon={faEye} />
 										21.3K views
 									</span>
 									<span className="calen">
-										<i className="fas fa-calendar"></i>
+										<FontAwesomeIcon icon={faCalculator} />
 										June 2, 2021
 									</span>
 								</p>

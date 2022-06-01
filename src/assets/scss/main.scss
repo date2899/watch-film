@@ -3,6 +3,13 @@
     padding: 0;
     box-sizing: border-box;
 }
+ul,ol{
+  padding: 0;
+}
+a{
+  color: unset;
+  text-decoration: none;
+}
 body{
     background: linear-gradient(
     270deg,
@@ -17,4 +24,6 @@ body{
 @import "topmovie";
 @import "toptv";
 @import "video";
+@import "footer";
+@import "detail";
 

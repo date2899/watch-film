@@ -1,0 +1,32 @@
+.footer{
+    margin-top: 250px;
+    height: 560px;
+    .content{
+        align-items: center;
+        background-color: #2E2E2E;
+        height: 100%;
+    }
+    .footer-left{
+        .left-header{
+            font-size: 64px;
+            font-weight:500;
+            padding-bottom: 32px;
+        }
+        .left-text{
+            font-size:16px;
+            font-weight: 700;
+            padding-top: 40px;
+            padding-bottom: 24px;
+        }
+        padding: 0 100px;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        background-color:#3D3D3D ;
+        flex-basis: 40%;
+    }
+    .footer-right{
+        padding: 0 100px;
+        flex-basis: 60%;
+    }
+}

@@ -7,7 +7,7 @@ const Banner = () => {
 			<div className="container-fluid col-md-10 p-0 h-100">
 				<div className="d-flex flex-wrap h-100">
 					<div className="banner-left col-md-6">
-						<img src={playbutton} alt="" srcset="" />
+						<img src={playbutton} alt="" srcSet="" />
 					</div>
 					<div className="banner-right col-md-6">
 						<h1 className="banner-header">The Legend of Sunrise</h1>

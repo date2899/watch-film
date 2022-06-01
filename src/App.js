@@ -2,25 +2,23 @@ import "./App.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap/dist/js/bootstrap.bundle.min";
 import "../src/assets/css/main.css";
+import "font-awesome/css/font-awesome.min.css";
 
+import { Routes, Route } from "react-router-dom";
 import Header from "./components/header/Header.jsx";
-import Banner from "./components/banner/Banner";
-import Slider from "./components/slider/Slider";
-import Lastwatch from "./components/lastwatch/Lastwatch";
-import Topmovie from "./components/topmovie/Topmovie";
-import Toptv from "./components/toptv/Toptv";
-import Video from "./components/video/Video";
+import Home from "./pages/home/Home";
+import Banner from "./pages/movie/Movies";
+import PageDetail from "./pages/pageDetail/PageDetail";
 
 function App() {
 	return (
 		<div className="App">
 			<Header />
-			<Banner />
-			<Slider />
-			<Lastwatch />
-			<Topmovie />
-			<Toptv />
-			<Video />
+			<Routes>
+				<Route path="" element={<Home />} />
+				<Route path="/movies" element={<Banner />} />
+				<Route path="/detail/:id" element={<PageDetail />} />
+			</Routes>
 		</div>
 	);
 }

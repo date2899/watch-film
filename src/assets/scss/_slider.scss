@@ -1,5 +1,5 @@
 .slide{
-    padding-top: 80px;
+    padding-top: 90px;
     .slide-header{
         font-size:32px;
         font-weight: 700;
@@ -7,21 +7,28 @@
     }
 }
 .swiper {
-    min-height: 160px;
-  }
-
+    .swiper-wrapper{
+        padding-bottom: 20px;
+    }
+    .swiper-button-prev, .swiper-button-next{
+        color: #fff;
+    }
+}
+    
 .swiper-slide {
     text-align: center;
     background: rgb(128, 128, 128);
     display: block;
     width: 100%;
     font-size: 18px;
-    min-height: 140px;
     object-fit: cover;
     /* Center slide text vertically */
     display: flex;
     justify-content: center;
     align-items: center;
+    img{
+        width: 100%;
+    }
 }
 .index{
     position: absolute;
